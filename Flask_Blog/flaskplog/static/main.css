@@ -1,0 +1,127 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body upgraded (from first design but keeps your base intent) */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+  color: #333333;
+  margin-top: 5rem;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #444444;
+}
+
+/* Navbar (unchanged but slightly smoother) */
+.bg-steel {
+  background-color: #5f788a;
+}
+
+.site-header .navbar-nav .nav-link {
+  color: #cbd5db;
+  transition: 0.3s;
+}
+
+.site-header .navbar-nav .nav-link:hover {
+  color: #ffffff;
+}
+
+.site-header .navbar-nav .nav-link.active {
+  font-weight: 500;
+}
+
+/* Main container feel (applied via content-section) */
+.content-section {
+  background: #ffffff;
+  padding: 30px 25px; /* increased */
+  border-radius: 15px; /* from first UI */
+  margin-bottom: 25px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* NEW */
+  border: none; /* cleaner */
+}
+
+/* Titles */
+.article-title {
+  color: #0077cc; /* upgraded */
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+a.article-title:hover {
+  color: #428bca;
+  text-decoration: none;
+}
+
+/* Content text */
+.article-content {
+  white-space: pre-line;
+  font-size: 1.05rem;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+/* Image (team/profile style upgrade) */
+.article-img {
+  height: 80px;
+  width: 80px;
+  margin-right: 16px;
+  border-radius: 50%; /* from first UI */
+  object-fit: cover;
+  border: 3px solid #74ebd5;
+}
+
+/* Metadata section */
+.article-metadata {
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.article-metadata a:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+/* Icons */
+.article-svg {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+}
+
+/* Account/Profile image */
+.account-img {
+  height: 125px;
+  width: 125px;
+  margin-right: 20px;
+  margin-bottom: 16px;
+  border-radius: 50%;
+  border: 3px solid #74ebd5;
+}
+
+/* Account name */
+.account-heading {
+  font-size: 2rem;
+  color: #0077cc;
+}
+
+/* Hover effect for sections (card feel) */
+.content-section:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .content-section {
+    padding: 20px;
+  }
+}
